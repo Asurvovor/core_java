@@ -1,0 +1,6 @@
+1.封装一个dog类
+2.需要添加一个name属性
+3.需要一个传入name参数的构造器
+4.添加一个shout（int shoutNum）,shoutNum是dog叫的次数
+5.get，set方法，重写toString方法
+
