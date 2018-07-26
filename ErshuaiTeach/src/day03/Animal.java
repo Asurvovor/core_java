@@ -1,6 +1,6 @@
 package day03;
 
-public class Animal {
+public abstract class Animal {
 	private String name;
 
 	public Animal(String name) {
@@ -22,7 +22,9 @@ public class Animal {
 		}
 		System.out.println();
 	}
-
+	
+	public abstract void eat();
+	
 	@Override
 	public String toString() {
 		return "Animal [name=" + name + "]";
