@@ -18,14 +18,11 @@ public class Dog extends Animal {
 		System.out.println("狗啃骨头~");
 	}
 
-	public void shout(int num, String voice, String eatWhat) {
-		System.out.println("叫" + num + "声:");
-		for (int i = 0; i < num; i++) {
-			System.out.println("一边" + voice + "一边" + eatWhat);
-		}
-		System.out.println();
+	@Override
+	public void shout(int shoutNum, String voice) {
+		System.out.println("狗一边啃骨头一边叫~");
+		super.shout(shoutNum, voice);
 	}
-
 	@Override
 	public String toString() {
 		return "Dog [legs=" + getLegs() + ", name=" + getName() + "]";
